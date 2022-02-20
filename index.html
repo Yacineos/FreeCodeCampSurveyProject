@@ -20,11 +20,21 @@
             </div>
             <div class="num-field">
                 <label id="number-label" for="number">Age</label><br>
-                <input id="number" type="number" name="num-holder" min="10" max="106" placeholder="Choose your age" required ><br>
+                <input id="number" type="number" name="num-holder" min="10" max="106" placeholder="Age" required ><br>
             </div>
             <div class="dropdown-field">
-                <label for="dropdown"></label>
-                <input id="dropdown" type="dropdown" name="dropdrop"  required>
+                <label for="dropdown">Select your favourite type</label><br>
+                <select id="dropdown" type="dropdown" name="dropdrop" placeholder="select an option" required><br>
+                <option disabled selected value>Select an option</option>
+                <option value="anime">anime</option>
+                <option value="movie">movie</option>
+                <option value="tvShow">TV Shows</option>
+                <option value="youtube">youtube</option>
+                <option value="prfrnotSay">prefer not to say</option>
+                <br>
+            </div>
+            <div class="radio-butt">
+                <input name="radio-choice" type="radio" value="1-25min" >[1-25]min
             </div>
         </form>
     </main>
