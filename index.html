@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -10,19 +10,19 @@
     </header>
     <main>
         <form id="survey-form">
-            <div class="name-holder">
+            <div class="form-group">
                <label id="name-label" for="name">First name</label><br>
                <input id="name" type="text" name="name-holder" placeholder="Enter your name" required><br>
             </div>
-            <div class="email-holder">
+            <div class="form-group">
                 <label id="email-label" for="email">Email</label><br>
                 <input id="email" type="email" name="email-holder" placeholder="Enter your email adress" required><br>
             </div>
-            <div class="num-field">
+            <div class="form-group">
                 <label id="number-label" for="number">Age</label><br>
                 <input id="number" type="number" name="num-holder" min="10" max="106" placeholder="Age" required ><br>
             </div>
-            <div class="dropdown-field">
+            <div class="form-group">
                 <label for="dropdown">Select your favourite type</label><br>
                 <select id="dropdown" type="dropdown" name="dropdrop" placeholder="select an option" required><br>
                 <option disabled selected value>Select an option</option>
@@ -33,7 +33,7 @@
                 <option value="prfrnotSay">prefer not to say</option>
                 </select>
             </div>
-            <div class="radio-butt">
+            <div class="form-group">
                 <p>What's the ideal watch time ?</p>
                 <label>
                 <input name="radio-choice" type="radio" value="1-25min" checked>[1-25]min <br>
@@ -45,11 +45,33 @@
                     <input name="radio-choice" type="radio" value=">60min">>60min <br>
                 </label>
             </div>
-            <div class="check-box">
+            <div class="form-group">
+                <p>How is composed the ideal rest day for you ?</p>
                 <label>
-                    <input name="check" type="checkbox">
+                    <input name="check" type="checkbox" value="movie">Netflix & chill <br>
+                </label>
+                <label >
+                    <input name="check" type="checkbox" value="practising-sport">Sport and outdoor activities <br>
+                </label>
+                <label >
+                    <input type="checkbox" name="check" value="programming">programming <br>
+                </label>
+                <label >
+                    <input type="checkbox" name="check" value="sona">massage , sleeping , sona <br>
+                </label>
+                <label >
+                    <input type="checkbox" name="check" value="gaming">gaming <br>
                 </label>
 
+            </div>
+            <div class="form-group">
+                <p>any additional comment ?</p>
+                <label for="comment">
+                <textarea  id="comment" name="optionalsheat" placeholder="Enter a message (optional)"></textarea><br>
+                </label>
+            </div>
+            <div class="form-group">
+                <button id="submit" type="submit" >submit</button>
             </div>
         </form>
     </main>
