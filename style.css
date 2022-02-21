@@ -1,7 +1,12 @@
 body {
-    background-image: url(https://www.granbyexpress.com/wp-content/uploads/sites/9/2020/12/Salle-de-cinema-Deposit-photos-1600x1017.jpg);
-    background-color: rgb(209, 3, 3);
-    background-size: 100vw;
+    background-image: url(https://www.granbyexpress.com/wp-content/uploads/sites/9/2020/12/Salle-de-cinema-Deposit-photos-1600x1017.jpg) ;
+    background-color: rgba(209, 3, 3,0.4);
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    
 }
 form {
     position: relative;
@@ -17,4 +22,8 @@ form {
 header {
     text-align: center;
     color: #FFF;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 5%;
 }
